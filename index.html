@@ -701,19 +701,6 @@
             font-size: 0.8rem;
         }
 
-        /* CV Download Section */
-        .cv-download {
-            background: linear-gradient(135deg, var(--secondary), var(--primary));
-        }
-
-        .cv-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-
         /* Contact Section */
         .contact { background: var(--secondary); }
 
@@ -1212,27 +1199,6 @@
         </div>
     </section>
 
-    <!-- CV Download Section -->
-    <section class="cv-download" id="cv">
-        <div class="section-header fade-in">
-            <span class="section-tag" data-i18n="cv-tag">Currículo</span>
-            <h2 class="section-title" data-i18n="cv-title">Download do CV</h2>
-            <p class="section-subtitle" data-i18n="cv-subtitle">
-                Faça download do meu currículo em formato PDF nos idiomas disponíveis.
-            </p>
-        </div>
-        <div class="cv-buttons">
-            <a href="#" id="download-pt" class="btn btn-primary">
-                <i class="fas fa-file-pdf"></i>
-                <span>CV - Português</span>
-            </a>
-            <a href="#" id="download-en" class="btn btn-blue">
-                <i class="fas fa-file-pdf"></i>
-                <span>CV - English</span>
-            </a>
-        </div>
-    </section>
-
     <!-- Education Section -->
     <section class="skills">
         <div class="section-header fade-in">
@@ -1652,17 +1618,6 @@
                 const lang = btn.getAttribute('data-lang');
                 setLanguage(lang);
             });
-        });
-
-        // PDF Download handlers
-        document.getElementById('download-pt').addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('Download do CV em Português. (PDF será gerado em produção)');
-        });
-
-        document.getElementById('download-en').addEventListener('click', (e) => {
-            e.preventDefault();
-            alert('Download CV in English. (PDF will be generated in production)');
         });
     </script>
 </body>
