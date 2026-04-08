@@ -1,50 +1,20 @@
-# Portfólio António Bacacheza
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-Portfólio profissional de Controlador de Operações de Transporte.
+# Run and deploy your AI Studio app
 
-## 🚀 Deploy na Vercel
+This contains everything you need to run your app locally.
 
-### Opção 1: Deploy via GitHub (Recomendado)
+View your app in AI Studio: https://ai.studio/apps/6ea9b84d-73c0-4b91-b7a7-8dcaec356d55
 
-1. Cria conta em [github.com](https://github.com)
-2. Cria novo repositório: `portfolio-antonio`
-3. Faz upload dos ficheiros:
-   - `index.html`
-   - `vercel.json`
-4. Vai a [vercel.com](https://vercel.com)
-5. Clica em "New Project"
-6. Importa o repositório do GitHub
-7. Clica em "Deploy"
-8. Site online em segundos! 🎉
+## Run Locally
 
-### Opção 2: Deploy Direto (Mais rápido)
+**Prerequisites:**  Node.js
 
-1. Vai a [vercel.com](https://vercel.com)
-2. Instala a CLI: `npm i -g vercel`
-3. Na pasta do projeto, corre: `vercel`
-4. Segue as instruções
-5. Site online! 🎉
 
-## 📁 Estrutura
-
-```
-portfolio-antonio/
-├── index.html      # Página principal
-├── vercel.json     # Configuração Vercel
-└── README.md       # Este ficheiro
-```
-
-## 🎨 Funcionalidades
-
-- Design responsivo (mobile/desktop)
-- Animações suaves
-- Formulário de contacto
-- SEO otimizado
-- Performance 100/100
-
-## 📞 Contacto
-
-António Bacacheza  
-Maputo, Moçambique  
-📞 +258 82 911 1400  
-✉️ antonio.bacacheza@outlook.com
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
